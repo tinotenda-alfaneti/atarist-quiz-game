@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 style="text-align: center;">Test Your Knowledge</h1>
+      <div class="content">
+        <div class="details">
+          <p class="question" id="question" style="text-align: left;"><span>Click "Start/Reset" to begin Quiz</span></p>
+        </div>
+        <label id="ans-label">Answer: </label><input type="text" class="typing-input" id="answer" maxlength="25">
+        <button class="check" id="check">Check</button>
+        <button class="check" id="next">Next</button>
+        <div class="details">
+          <p class="decision" id="decision"><span></span></p>
+          <p class="total-correct" >Total correct: <span id="t-correct">0</span></p>
+          <p class="total-wrong" >Total wrong: <span id="t-wrong">0</span></p>
+          <p class="total-skipped" >Skips Left: <span id="t-skipped">5</span></p>
+        </div>
+ 
+        <button class="reset-btn" id="reset-btn">Start/Reset</button>
+      </div>
+    </div>
+
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
